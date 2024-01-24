@@ -18,7 +18,7 @@ namespace NHibernateBug {
                     { "connection.connection_string", connectionString },
                     { "connection.driver_class", "NHibernate.Driver.SqlClientDriver, NHibernate" },
                     { "dialect", "NHibernate.Dialect.MsSql2012Dialect" },
-                    { "default_flush_mode", "Never" },
+                    { "default_flush_mode", "Manual" },
                     { "transaction.use_connection_on_system_prepare", "false" },
                 })
                 .AddXmlString(Entity.mapping);
